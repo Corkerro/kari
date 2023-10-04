@@ -208,10 +208,7 @@ h6 {
 }
 
 .menu-open .menu__body {
-  left: 50vw;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 0;
 }
 
 .menu__place {
@@ -428,6 +425,15 @@ h6 {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+@media (min-width: 33.75em) {
+  .menu-open .menu__body {
+    left: 50vw;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 @media (any-hover: none) {
