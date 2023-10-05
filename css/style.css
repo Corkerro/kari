@@ -147,8 +147,17 @@ h6 {
   padding-right: 0 !important;
 }
 
+._header-show {
+  top: 0 !important;
+}
+
 .header {
-  position: relative;
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  left: 0;
+  -webkit-transition: top 0.5s ease;
+  transition: top 0.5s ease;
   z-index: 10;
   height: 120px;
   padding: 15px 0;
@@ -256,6 +265,7 @@ h6 {
 
 .header__search {
   position: relative;
+  cursor: pointer;
   z-index: 5;
 }
 
@@ -537,6 +547,10 @@ h6 {
   margin-bottom: 6.25rem;
 }
 
+.main {
+  margin-top: 7.5rem;
+}
+
 .main__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -668,7 +682,7 @@ h6 {
   color: #fff;
 }
 
-.discount__container p {
+.discount__container p.p {
   font-size: 0.75rem;
   text-align: center;
   max-width: 25rem;
